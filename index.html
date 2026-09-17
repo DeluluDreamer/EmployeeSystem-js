@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="org.css">
+    <title>Employee Management System</title>
+</head>
+<body>
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+    <div id="date"></div>
+    <div id="time"></div>
+
+    <hr>
+
+    <div class="searchBox">
+        <label>Search Employee:</label>
+        <input id="search" type="search" placeholder="Search employee">
+        <button id="but">Search</button>
+    </div>
+
+    <div class="buttons">
+        <button id="all">All Employees</button>
+        <button id="it">IT</button>
+        <button id="hr">HR</button>
+        <button id="fire">Finance</button>
+        <button id="mark">Marketing</button>
+    </div>
+
+    <hr>
+
+    <div class="sortBox">
+        <label>Sort By:</label>
+        <select id="sort">
+            <option value="none">Default</option>
+            <option value="name">Name</option>
+            <option value="age">Age</option>
+            <option value="salary">Salary</option>
+        </select>
+    </div>
+
+    <p id="message"></p>
+
+    <div class="details">
+        <div>
+            <h3>Total Employees</h3>
+            <p id="count">0</p>
+        </div>
+
+        <div>
+            <h3>Total Salary</h3>
+            <p id="totalSalary">₹0</p>
+        </div>
+
+        <div>
+            <h3>Average Salary</h3>
+            <p id="averageSalary">₹0</p>
+        </div>
+    </div>
+
+    <div class="highestBox">
+        <h2>Highest Paid Employee</h2>
+        <div id="highest"></div>
+    </div>
+
+    <hr>
+
+    <div id="least"></div>
+
+    <hr>
+
+    <div class="addEmployee">
+        <h1>ADD EMPLOYEE</h1>
+
+        <label>Name:</label>
+        <input id="name" type="text" placeholder="Enter name">
+        <p id="nameError"></p>
+
+        <label>Age:</label>
+        <input id="age" type="number" placeholder="Enter age">
+        <p id="ageError"></p>
+
+        <label>Email:</label>
+        <input id="email" type="email" placeholder="Enter email">
+        <p id="emailError"></p>
+
+        <label>Department:</label>
+        <select id="department">
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+
+        <p id="departmentError"></p>
+
+        <label>Salary:</label>
+        <input id="salary" type="number" placeholder="Enter salary">
+
+        <br>
+
+        <button id="add">Add Employee</button>
+    </div>
+
+    <script src="org.js"></script>
+</body>
+</html>
